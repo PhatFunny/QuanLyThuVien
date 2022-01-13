@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="711.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.demo3.HomePageLogoutController">
+   <top>
+      <AnchorPane prefHeight="167.0" prefWidth="1025.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="homeImageView" fitHeight="160.0" fitWidth="1024.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/home.PNG" />
+               </image>
+            </ImageView>
+            <MenuBar layoutY="133.0" prefHeight="32.0" prefWidth="844.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="Trang chủ" />
+                <Menu mnemonicParsing="false" text="Tra cứu sách">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#traCuuPageOnAction" text="Tra cứu" />
+                     </items></Menu>
+                <Menu mnemonicParsing="false" text="Cá nhân">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#InfoPageOnAction" text="Xem thông tin cá nhân" />
+                     </items></Menu>
+              </menus>
+            </MenuBar>
+            <Button layoutX="843.0" layoutY="131.0" mnemonicParsing="false" onAction="#homePageOnAction" prefHeight="34.0" prefWidth="148.0" text="Đăng xuất" />
+            <ImageView fitHeight="31.0" fitWidth="42.0" layoutX="994.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/contact.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="577.0" fitWidth="1024.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/truong.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
